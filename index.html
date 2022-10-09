@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylejs.css">
+    <script src="https://kit.fontawesome.com/94af3a0953.js" crossorigin="anonymous"></script>
+    <title>App Calculo de Horas</title>
+</head>
+<body>  
+
+        <form action="">
+            <!-- Contenedor -->
+            <div class="container">
+                <img src="Logo.jpg" alt="logo">
+                <h1>Cálculo de Horas Extra</h1> 
+                <!-- Input calculo -->
+                    <input type="number" name="numero1" id="salario" inputmode="tel" class="input" placeholder="Ingresa tu Salario" autofocus> <br>
+                    <input type="number" name="numero1" id="cantHoras" inputmode="tel" class="input" placeholder="Cantidad de Horas"><br>
+                        <select name="select" class="input" id="select"  onchange="calcular()">
+                            <option value="0.35" id="35%" selected>35% Diurno</option>
+                            <option value="0.5" id="50%">50% Nocturo</option>
+                            <option value="1" id="100%">100% Feriado</option>
+                        </select>
+                    <div class="botones">
+                        <input type="button" onClick="calcular()" Value="calcular" class="input" id="button"/>
+                    </div>
+                    <!-- Seccion del resultado -->
+                    <fieldset class="">
+                        <legend >Resultado</legend>
+                        <h2 id="result" class="result-text"></h2>
+                    </fieldset>
+                 <input type="reset" onClick="calcular()" Value="borrar" class="input" id="button"/>
+                 <!-- REDES SOCIALES ICONS -->
+                 <div class="social-link">
+                     <a href="https://www.linkedin.com/in/franklyn-yawerlyn-castro-dev/" target="_blank"> <i class="fab fa-linkedin" ></i></a>
+                     <a href="https://github.com/franklyncastro" target="_blank"> <i class="fab fa-github"></i></a>
+                     <a href="https://api.whatsapp.com/send?phone=18094664678&text=Hola,%20como%20estas!" target="_blank"> <i class="fab fa-whatsapp"></i></a>
+                 </div>
+                </div>
+                <a href="" class="copyright" id="copyright"></a>
+        </form>
+    <script src="app.js"></script>
+    <script src="ejercicios.js"></script>
+    <!-- By:Franklyn Yawerlyn Castro -->
+</body>
+</html>
+
